@@ -124,6 +124,6 @@ if uploaded_file is not None:
         mask = cv2.inRange(hsv_img, lower_bound, upper_bound)
         filtered_img = cv2.bitwise_and(img, img, mask=mask)
 
-        st.image(filtered_img, caption="Color Filtered Image", use_column_width=True)
+        st.image(img, caption="Original Image", use_container_width=True)
 
 st.sidebar.text("Developed with ❤️ by Dea Jain")
